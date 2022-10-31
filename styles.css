@@ -1,0 +1,342 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+ background-color: #1D2D50;
+  position: relative;
+  animation: animate 7.5s ease-in-out infinite;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.wave-text {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.wave-text span {
+  margin-top: 50px;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  color: #EEEEEE;
+  background-size: 200% 200%;
+  font-size: 100px;
+  font-weight: bolder;
+  font-family: monospace;
+  animation: waver 3s ease-in-out infinite;
+  animation-delay: calc(.1s*var(--i));
+}
+
+@keyframes waver {
+  0% {
+    transform: translateY(0px);
+  }
+
+  20% {
+    transform: translateY(-24px);
+  }
+
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes waver {
+  0% {
+    transform: translateY(0px);
+  }
+
+  20% {
+    transform: translateY(-24px);
+  }
+
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.wrapper{
+  display: inline-flex;
+  }
+  
+  .wrapper .text{
+   color: #fff;
+  font-size: 50px;
+  font-weight: bold;
+  }
+  .wrapper .dynamic-text{
+    margin-left: 15px;
+    height: 60px;
+    line-height: 60px;
+    overflow: hidden;
+    }
+    
+    .dynamic-text li{
+    color: #FCDAB7;
+    list-style: none;
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+    top: 0;
+    animation: slide 9s steps(3) infinite;
+      }
+
+      @keyframes slide{
+        100%{
+       top: -180px;
+        }
+        }
+
+    .dynamic-text li span{
+      position: relative;
+      }
+      
+     .dynamic-text li span::after{
+      content: "";
+      position: absolute;
+      left: 0;
+      height: 102%;
+      width: 100%;
+      background: #1D2D50;
+      border-left: 5px solid #FCDAB7;
+      animation: typing 3s steps(19) infinite;
+      }
+
+      @keyframes typing{
+        100%{
+        left: 100%;
+        margin: 0 -35px 0 35px
+        }
+        }
+
+p {
+  font-size: 30px;
+  font-weight: light;
+  color: #f2e6e6;
+  margin-top: 10px;
+}
+
+.icons{
+ margin-top: 25px;
+}
+
+i{
+  color: #f2e6e6;
+  justify-content: space-around ;
+}
+
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgb(19, 15, 12);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgb(21, 14, 8);
+    transform: translatey(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px ;
+    transform: translatey(0px);
+  }
+}
+
+.container {
+  margin-top: 30px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  margin-top: 20px;
+  width: 200px;
+  height: 200px;
+  box-sizing: border-box;
+  border: 5px rgb(246, 231, 216) solid;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 5px 20px 0px rgba(0,0,0,026);
+  transform: translatey(0px);
+  animation: float 3s ease-in-out infinite;
+}
+img { width: 100%; height: auto; }
+
+.content {
+  width: 100%;
+  max-width: 600px;
+ 
+  box-sizing: border-box;
+  text-align: center;
+}
+
+
+h2{
+  color: darkviolet;
+
+}
+h3{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+
+.parent{
+  width: 80vw;
+  max-height: 600px;
+  max-width: 1000;
+  min-height: 500px;
+  min-width: 800px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.border{
+  height: 369px;
+  width: 290px;
+  background: transparent;
+  transition: border 1s;
+  position: relative;
+}
+
+.border:hover{
+  border: 1px solid white;
+}
+.card{
+  height: 379px;
+  width: 300px;
+  background: #333333;
+  transition: background 0.8s;
+  overflow: hidden;
+  background: rgb(198, 155, 123);
+  box-shadow: 0 70px 63px -60px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.card1{
+  background: url(image/web.jpg) center no-repeat;
+  background-size: 400px;
+  }
+  
+  .card1:hover{
+  background: url(image/web.jpg) center no-repeat;
+  background-size: 700px;
+  }
+  
+  .card1:hover{
+  opacity: 1;
+  }
+  
+  .card2{
+    background: url(image/amsterdam.jpg) center no-repeat;
+    background-size: 630px;
+    }
+    
+    .card2:hover{
+    background: url(image/amsterdam.jpg) center no-repeat;
+    background-size: 1000px;
+    }
+    
+    .card2:hover{
+    opacity: 1;
+    }
+
+    .card3{
+      background: url(image/book.jpg) center no-repeat;
+      background-size: 600px;
+      }
+      
+      .card3:hover{
+      background: url(image/book.jpg) center no-repeat;
+      background-size: 1200px;
+      }
+      
+      .card3:hover{
+      opacity: 1;
+      }
+
+      .card4{
+        background: url(image/job. ) center no-repeat;
+        background-size: 300px;
+              }
+        
+        .card4:hover{
+        background: url(image/job.webp) center no-repeat;
+        background-size: 600px;
+        }
+        
+        .card4:hover{
+        opacity: 1;
+        }
+
+        .ocean { 
+          height: 5%;
+          width:100%;
+          position:absolute;
+          bottom:0;
+          left:0;
+        }
+        
+        .wave {
+          margin-top: 250px;
+          background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x; 
+          position: absolute;
+          top: -198px;
+          width: 5000px;
+          height: 180px;
+          animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+          transform: translate3d(0, 0, 0);
+        }
+        
+        .wave:nth-of-type(2) {
+          top: -175px;
+          animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+          opacity: 1;
+        }
+        
+        @keyframes wave {
+          0% {
+            margin-left: 0;
+          }
+          100% {
+            margin-left: -1600px;
+          }
+        }
+        
+        @keyframes swell {
+          0%, 100% {
+            transform: translate3d(0,-25px,0);
+          }
+          50% {
+            transform: translate3d(0,5px,0);
+          }
+        }
+
+     
+    
+      
+          
+          
+          
